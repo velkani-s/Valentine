@@ -22,18 +22,18 @@ function Message() {
               </div>
               <div className="letter-content">
                 <p>
-                  <span className="salutation">My love,</span>
+                  <span className="salutation">My Raajii,</span>
                 </p>
 
                 <p>You are the best thing that ever happened to me.</p>
 
-                <p>Thank you for your love, your patience, and your smile.</p>
+                <p> Always Keep your Smile. Let your laughter brings peace & joy to everyone dii urundaa </p>
 
-                <p>I promise to choose you every single day.</p>
+                <p>Yaaru Vandhaalum ponaalum I promise to choose you every single day.</p>
 
                 <div className="signature">
                   <p className="signature-text">
-                    Happy Valentine's Day <span className="heart">❤️</span>
+                    Happy Valentine's Day dii UrundaaKuttyy <span className="heart">❤️</span>
                   </p>
                 </div>
               </div>

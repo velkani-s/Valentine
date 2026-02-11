@@ -9,11 +9,11 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          Be My Valentine <span className="heart">❤️</span>
+           My Valentine RaajiKuttyy <span className="heart">❤️</span>
         </h1>
         <h2 className="hero-subtitle">Happy Valentine's Day, My Love</h2>
         <p className="hero-description">
-          Every moment with you is my favorite love story.
+          Every moment with you is my favorite love story di urundaa.
         </p>
         <button
           className="btn btn-primary hero-btn"
