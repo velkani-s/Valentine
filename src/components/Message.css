@@ -1,0 +1,159 @@
+.message-section {
+  background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+  padding: clamp(2rem, 6vw, 4rem) 20px;
+}
+
+.message {
+  width: 100%;
+}
+
+.message-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.message-headline {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: white;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.btn-message {
+  background: white;
+  color: #ff6b9d;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  padding: clamp(12px, 2.5vw, 16px) clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-message:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.letter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.letter {
+  background: white;
+  border-radius: 12px;
+  max-width: clamp(300px, 80vw, 600px);
+  width: 100%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.letter-header {
+  background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+  color: white;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  text-align: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.letter-header h3 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 700;
+  margin: 0;
+  font-style: italic;
+}
+
+.letter-content {
+  padding: clamp(1.5rem, 3vw, 2rem);
+  color: #333;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.8;
+}
+
+.letter-content p {
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.letter-content p:last-child {
+  margin-bottom: 0;
+}
+
+.salutation {
+  font-weight: 600;
+  color: #ff6b9d;
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+}
+
+.signature {
+  margin-top: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  border-top: 2px solid #ff6b9d;
+  padding-top: clamp(1rem, 2vw, 1.5rem);
+}
+
+.signature-text {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 600;
+  color: #ff6b9d;
+}
+
+.heart {
+  display: inline-block;
+  animation: heartBeat 0.8s ease-in-out infinite;
+  margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .message-section {
+    padding: clamp(1.5rem, 5vw, 3rem) 20px;
+  }
+
+  .message-headline {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  }
+
+  .letter {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .message-section {
+    padding: clamp(1rem, 4vw, 2rem) 16px;
+  }
+
+  .message-headline {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .letter-content {
+    padding: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+  }
+
+  .letter-content p {
+    margin-bottom: clamp(0.8rem, 1.5vw, 1rem);
+  }
+
+  .signature {
+    margin-top: clamp(1rem, 2vw, 1.2rem);
+    padding-top: clamp(0.8rem, 1.5vw, 1rem);
+  }
+}

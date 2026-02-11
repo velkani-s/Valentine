@@ -1,0 +1,160 @@
+.special-moments {
+  padding: clamp(3rem, 8vw, 6rem) 20px;
+  background: linear-gradient(180deg, #fff5f7 0%, #ffffff 100%);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #333;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.8rem, 2vw, 1.2rem);
+  flex-wrap: wrap;
+}
+
+.heart-icon {
+  display: inline-block;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.moment-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(255, 107, 157, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.moment-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 16px 40px rgba(255, 107, 157, 0.25);
+}
+
+.card-image {
+  width: 100%;  
+  height: clamp(180px, 30vw, 250px);
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.moment-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: #ff6b9d;
+  font-weight: 700;
+  margin-bottom: clamp(0.6rem, 2vw, 0.8rem);
+}
+
+.card-description {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: clamp(1rem, 2vw, 1.2rem);
+  flex-grow: 1;
+}
+
+.btn-read-more {
+  background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+  color: white;
+  border: none;
+  padding: clamp(10px, 2vw, 14px) clamp(20px, 4vw, 28px);
+  border-radius: 24px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-read-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 107, 157, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .moments-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+
+  .card-image {
+    height: clamp(160px, 25vw, 200px);
+  }
+}
+
+@media (max-width: 768px) {
+  .special-moments {
+    padding: clamp(2rem, 6vw, 4rem) 20px;
+  }
+
+  .moments-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  .card-image {
+    height: clamp(140px, 20vw, 180px);
+  }
+
+  .section-title {
+    gap: clamp(0.6rem, 1.5vw, 0.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .special-moments {
+    padding: clamp(1.5rem, 5vw, 2.5rem) 16px;
+  }
+
+  .moments-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .card-image {
+    height: clamp(120px, 50vw, 150px);
+  }
+
+  .card-content {
+    padding: clamp(1rem, 2.5vw, 1.2rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+  }
+}
