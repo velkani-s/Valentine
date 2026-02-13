@@ -6,7 +6,7 @@ import StreetPic from "../assets/StreetP.jpg";
 import Yoo from "../assets/Yoo.jpg";
 import Bus2 from "../assets/bus2.jpg";
 import Butterfly from "../assets/butterfly.jpg";
-import Favor from "../assets/favo.jpg";
+import Favor from "../assets/Favo.jpg";
 function SpecialMoments() {
   const moments = [
     {
