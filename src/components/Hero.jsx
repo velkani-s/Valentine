@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import LogoutButton from "./LogoutButton";
 import "./Hero.css";
 // import MeeRaaji from "../assets/MeRaaji.jpeg";
 import Bus from "../assets/Bus.jpg";
@@ -7,9 +8,12 @@ function Hero() {
 
   return (
     <section className="hero">
+      <div style={{ position: "absolute", top: "20px", right: "20px" }}>
+        <LogoutButton />
+      </div>
       <div className="hero-content">
         <h1 className="hero-title">
-           My Valentine RaajiKuttyy <span className="heart">❤️</span>
+          My Valentine RaajiKuttyy <span className="heart">❤️</span>
         </h1>
         <h2 className="hero-subtitle">Happy Valentine's Day, My Love</h2>
         <p className="hero-description">
@@ -23,11 +27,7 @@ function Hero() {
         </button>
       </div>
       <div className="hero-image">
-        <img
-          src={Bus}
-          alt={"Me and Raaji"}
-          className="profile-pic"
-        />
+        <img src={Bus} alt={"Me and Raaji"} className="profile-pic" />
       </div>
     </section>
   );

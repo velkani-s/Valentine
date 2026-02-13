@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: "dist", // Ensure build output directory is 'dist'
   },
   server: {
-    host: "127.0.0.1", // Restrict access to localhost
+    host: "0.0.0.0", // Allow access from localhost and other network interfaces
     port: 3000,
     strictPort: true,
   },
