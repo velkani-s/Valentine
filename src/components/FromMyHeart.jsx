@@ -1,8 +1,8 @@
   import "./FromMyHeart.css";
-  import Thanks from "../assets/thank.jpg";
+  import Thanks from "../assets/Thank.jpg";
   import Auto from "../assets/auto.jpg";
   import Pongal from "../assets/ponga.jpg";
-  import Enga from "../assets/enga.jpg";
+  import Enga from "../assets/Enga.jpg";
   function FromMyHeart() {
     const photos = [
       {
