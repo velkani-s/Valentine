@@ -5,14 +5,5 @@
       "dest": "/index.html",
       "methods": ["GET", "POST"]
     }
-  ],
-  "protection": {
-    "enabled": true,
-    "users": [
-      {
-        "username": "your-username",
-        "password": "your-password"
-      }
-    ]
-  }
+  ]
 }
