@@ -24,16 +24,24 @@ function Message() {
                 <p>
                   <span className="salutation">My Raajii,</span>
                 </p>
+                <p>
+                  Always Keep your Smile. Let your laughter brings peace & joy
+                  to everyone dii urundaa
+                </p>
 
+                <p>
+                  Yaaru Vandhaalum ponaalum, Nee eppovum en kooda irukkanum at
+                  the same time I promise to choose you every single day di
+                  kundii. like i always do.
+                </p>
                 <p>You are the best thing that ever happened to me.</p>
-
-                <p> Always Keep your Smile. Let your laughter brings peace & joy to everyone dii urundaa </p>
-
-                <p>Yaaru Vandhaalum ponaalum I promise to choose you every single day.</p>
+                <p>you'll be always my special</p>
+                <p>You are my everything.</p>
 
                 <div className="signature">
                   <p className="signature-text">
-                    Happy Valentine's Day dii UrundaaKuttyy <span className="heart">❤️</span>
+                    Happy Valentine's Day dii UrundaaKuttyy{" "}
+                    <span className="heart">❤️</span>
                   </p>
                 </div>
               </div>

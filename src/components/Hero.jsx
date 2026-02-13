@@ -13,7 +13,7 @@ function Hero() {
         </h1>
         <h2 className="hero-subtitle">Happy Valentine's Day, My Love</h2>
         <p className="hero-description">
-          Every moment with you is my favorite love story di urundaa.
+          Every moment with you is my favorite moments di urundaa.
         </p>
         <button
           className="btn btn-primary hero-btn"
