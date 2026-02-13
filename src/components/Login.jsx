@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import "../App.css";
+import "./Login.css"; // We will create this next
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -18,60 +18,62 @@ function Login() {
 
     try {
       const success = await login(username, password);
-
       if (success) {
-        // Redirect to home after successful login
         navigate("/home", { replace: true });
       } else {
-        setError("Invalid credentials");
+        setError("That's not the right code, My Love! ❌");
       }
     } catch (err) {
-      setError(err.message || "Login failed");
+      setError("Something went wrong with our heart's server 💫");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div style={{ maxWidth: "400px", margin: "50px auto", padding: "20px" }}>
-      <h1>Login</h1>
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "flex", flexDirection: "column", gap: "15px" }}
-      >
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-          style={{ padding: "10px", fontSize: "14px" }}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          style={{ padding: "10px", fontSize: "14px" }}
-        />
-        <button
-          type="submit"
-          disabled={loading}
-          style={{
-            padding: "10px",
-            fontSize: "16px",
-            backgroundColor: loading ? "#ccc" : "#007bff",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            cursor: loading ? "not-allowed" : "pointer",
-          }}
-        >
-          {loading ? "Logging in..." : "Login"}
-        </button>
-        {error && <p style={{ color: "red", margin: "0" }}>{error}</p>}
-      </form>
+    <div className="login-page">
+      {/* Floating Hearts Background (Optional CSS particles) */}
+      <div className="heart-bg"></div>
+
+      <div className="login-card">
+        <div className="login-header">
+          <span className="main-heart">💝</span>
+          <h1>Hello RaajiKuttyy!</h1>
+          <p>Enter our secret code to unlock my heart</p>
+        </div>
+
+        <form onSubmit={handleSubmit} className="login-form">
+          <div className="input-group">
+            <span className="input-icon">👤</span>
+            <input
+              type="text"
+              placeholder="Your Name (Velkani)"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <span className="input-icon">🔒</span>
+            <input
+              type="password"
+              placeholder="Secret Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <button type="submit" className="login-btn" disabled={loading}>
+            {loading ? "Opening Memories..." : "Enter Our World ❤️"}
+          </button>
+
+          {error && <div className="error-bubble">{error}</div>}
+        </form>
+
+        <p className="login-footer">Always Yours, Your Urundaa 💖</p>
+      </div>
     </div>
   );
 }
