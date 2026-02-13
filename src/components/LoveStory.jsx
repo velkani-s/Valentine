@@ -13,12 +13,12 @@ function LoveStory() {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_br6mobp",
+        "template_m4nbvrh",
         {
           story: story,
         },
-        "YOUR_PUBLIC_KEY",
+        "w8-TfeUHNk9YLp_xW",
       )
       .then(
         () => {
